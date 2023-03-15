@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TT Lakes Neue';
+    src: local('TT Lakes Neue Extra Light'), local('TT-Lakes-Neue-Extra-Light'),
+        url('TTLakesNeue-XLight.woff2') format('woff2'),
+        url('TTLakesNeue-XLight.woff') format('woff'),
+        url('TTLakesNeue-XLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }

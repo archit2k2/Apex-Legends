@@ -1,0 +1,966 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.window
+{
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'TT Lakes Neue';
+    src: local('TT Lakes Neue Thin'), local('TT-Lakes-Neue-Thin'),
+        url('Fonts/TTLakesNeue-Thin/TTLakesNeue-Thin.woff2') format('woff2'),
+        url('Fonts/TTLakesNeue-Thin/TTLakesNeue-Thin.woff') format('woff'),
+        url('Fonts/TTLakesNeue-Thin/TTLakesNeue-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Neue light';
+    src: local('TT Lakes Neue Light'), local('TT-Lakes-Neue-Light'),
+        url('Fonts/TTLakesNeue-Light/TTLakesNeue-Light.woff2') format('woff2'),
+        url('Fonts/TTLakesNeue-Light/TTLakesNeue-Light.woff') format('woff'),
+        url('Fonts/TTLakesNeue-Light/TTLakesNeue-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Neue Regular';
+    src: local('TT Lakes Neue Regular'), local('TT-Lakes-Neue-Regular'),
+        url('Fonts/TTLakesNeue-Regular/TTLakesNeue-Regular.woff2') format('woff2'),
+        url('Fonts/TTLakesNeue-Regular/TTLakesNeue-Regular.woff') format('woff'),
+        url('Fonts/TTLakesNeue-Regular/TTLakesNeue-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.back-video
+{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 91%;
+    object-fit: cover;
+}
+
+.navbar
+{
+    background-color: #161616;
+    font-size: 3.5vh;
+    color: whitesmoke;
+    font-family: "Teko";
+    font-weight: bold;
+    height: 9%;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    display: flex;
+}
+
+.nav-tab
+{
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo
+{
+    width: 20%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5vw 0 1vw;
+}
+
+.nav-logo img
+{
+    height: 6vh;
+    width: 5vw;
+}
+
+.nav-link
+{
+    height: 100%;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.nav-link>div
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link a:hover
+{
+    color: #DA292A;
+}
+
+.dropdown-arrow
+{
+    font-size: 1.9vh;
+    transition-duration: 0.3s;
+}
+
+.dropdown-menu
+{
+    display: none;
+}
+
+.dropdown-menu a
+{
+    text-decoration: none;
+}
+
+.multi-dropdown-menu a
+{
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+.nav-link-title
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.multi-dropdown-menu
+{
+    display: none;
+}
+
+.dropdown-menu-1 a
+{
+    color: #f3f3f3;
+}
+
+.dropdown-menu-2 a
+{
+    color: #f3f3f3;
+}
+
+.nav-link div:hover #multi-dropdown-menu-option-1
+{
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 1.8vw 3vh 2.3vw;
+}
+
+.nav-link div:hover #multi-dropdown-menu-option-2
+{
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 1.8vw;
+}
+
+.nav-link div:hover #multi-dropdown-menu-option-3
+{
+    display: flex;
+    flex-direction: column;
+    margin: 3vh 2.3vw 3vh 1.8vw;
+}
+
+.nav-link div:hover .multi-dropdown-menu-option-label
+{
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    font-family: 'TT Lakes Neue Regular';
+    padding-bottom: 0.7vh;
+}
+
+.nav-link div:hover .multi-dropdown-menu-option-links
+{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh 0;
+    margin-bottom: 2vh;
+}
+
+.nav-link div:hover .multi-dropdown-menu-option-links div
+{
+    padding: 1vh 0;
+}
+
+.nav-link>div:hover>a
+{
+    color: #DA292A;
+}
+
+.nav-link>a
+{
+    color: #f3f3f3;
+    text-decoration: none;
+}
+
+.nav-link div:hover .dropdown-arrow
+{
+    transform: rotateX(180deg);
+}
+
+.nav-link>div:hover
+{
+    height: 130%;
+}
+
+.nav-link div:hover .dropdown-menu
+{
+    background-color: #161616;
+    border-radius: 4px;
+    opacity: 90%;
+    display: block;
+    position: absolute;
+    font-family: 'TT Lakes Neue';
+    font-size: 2.7vh;
+    margin-top: 1.2vh;
+    top: 100%;
+}
+
+.nav-link div:hover .dropdown-menu-1
+{
+    display: block;
+    margin: 2.5vh 3.5vw 1.5vh 3vh;
+}
+
+.nav-link div:hover .dropdown-menu-2
+{
+    display: block;
+    margin: 1.5vh 3.5vw 3.5vh 3vh;
+}
+
+.nav-link div:hover .multi-dropdown-menu
+{
+    background-color: #161616;
+    border-radius: 4px;
+    opacity: 90%;
+    display: flex;
+    position: absolute;
+    font-family: 'TT Lakes Neue';
+    font-size: 2.8vh;
+    margin-top: 1.2vh;
+    top: 100%;
+}
+
+.nav-search
+{
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.content
+{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.intro
+{
+    background-color: rgb(0,0,0,0.32);
+    background-blend-mode: darken;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 0.5px solid black;
+}
+
+#logo
+{
+    height: 40vh;
+    width: 60vw;
+    margin-bottom: 2vh;
+}
+
+#logo2
+{
+    height: 20vh;
+    width: 5vw;
+}
+
+.intro-img
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 91%;
+    box-sizing: border-box;
+}
+
+.intro-img label
+{
+    text-align: center;
+    font-family: 'TT Lakes Neue Regular';
+    color: #f3f3f3;
+    box-sizing: border-box;
+    margin: 0 15% 3vh 15%;
+    font-size: 3.8vh;
+}
+
+#play
+{
+    border: 2px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1.5vh 2vw;
+    font-family: 'TT Lakes Neue Regular';
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 3vh;
+    font-weight: lighter;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.game-overview
+{
+    background-image: url(Images/Game-Overview/Game-Overview-Bg.jpg);
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-overview-1
+{
+    background-image: url(Images/Game-Overview/Brief-1.png);
+    background-size: cover;
+    width: 80%;
+    height: 70vh;
+    box-sizing: border-box;
+    margin: 8vh 0 6vh 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.game-overview-1 div
+{
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.game-overview-1 div label
+{
+    color: white;
+    font-size: 7vh;
+    font-family: "Teko";
+    font-weight: bold;
+}
+
+.game-overview-1 div span
+{
+    color: white;
+    font-size: 2.8vh;
+    font-family: "TT Lakes Neue Regular";
+}
+
+
+
+.game-overview-1 div a
+{
+    background-color: #DA292A;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 3vh;
+    padding: 1.1vh 2vw 1.6vh;
+    color: whitesmoke;;
+    font-size: 3vh;
+    font-family: "TT Lakes Neue Regular";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#legends
+{
+    width: 100%;
+}
+
+.game-overview-2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #161616;
+    box-sizing: border-box;
+}
+
+.game-overview-2 label
+{
+    font-family: "Teko";
+    font-size: 7vh;
+    margin: 3vh 0 1vh 0;
+}
+
+.game-overview-2 span
+{
+    font-family: 'TT Lakes Neue Regular';
+    font-size: 3vh;
+    margin: 1vh 0 2vh;
+}
+
+.game-overview-3
+{
+    background-image: url(Images/Game-Overview/Brief-2.png);
+    background-size: cover;
+    width: 80%;
+    height: 70vh;
+    box-sizing: border-box;
+    margin: 8vh 0 6vh 0;
+    display: flex;
+}
+
+.game-overview-3 div
+{
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.game-overview-3 div label
+{
+    color: white;
+    font-size: 7vh;
+    font-family: "Teko";
+    font-weight: bold;
+}
+
+.game-overview-3 div span
+{
+    color: white;
+    font-size: 2.8vh;
+    font-family: "TT Lakes Neue Regular";
+}
+
+.game-overview-3 div a
+{
+    background-color: #DA292A;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 3vh;
+    padding: 1.1vh 2vw 1.6vh;
+    color: whitesmoke;;
+    font-size: 3vh;
+    font-family: "TT Lakes Neue Regular";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.game-overview-4
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1vh 20% 4vh;
+    box-sizing: border-box;
+}
+
+.game-overview-4 div
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.game-overview-4 div img
+{
+    height: 28vh;
+    width: 23vw;
+    margin: 2vh 2vw 1vh 2vw;
+    box-sizing: border-box;
+}
+
+.game-overview-4 div label
+{
+    font-family: 'TT Lakes Neue Regular';
+    font-size: 4vh;
+    color: #252525;
+    box-sizing: border-box;
+    letter-spacing: -0.04vw;
+    margin: 2vh 2vw 2vh 2vw;
+    padding: 0 1vw;
+    font-weight: 575;
+}
+
+.game-overview-4 div span
+{
+    color: #252525;
+    font-family: 'TT Lakes Neue light';
+    font-size: 2.8vh;
+    font-weight: 400;
+    margin: 2vh 2vw;
+    padding: 0 1vw;
+}
+
+#divider
+{
+    width: 70%;
+    box-sizing: border-box;
+    margin-top: 1vh 0 3vh 0;
+}
+
+.game-overview-5
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-overview-5 label
+{
+    color: #252525;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 7vh;
+    font-family: "Teko";
+    margin: 7vh 0 1vh;
+}
+
+.game-overview-5 span
+{
+    font-family: 'TT Lakes Neue light';
+    text-align: center;
+    color: #252525;
+    box-sizing: border-box;
+    padding: 0 17%;
+    font-size: 3vh;
+    margin: 3vh 0;
+}
+
+.game-overview-6
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.game-overview-6 label
+{
+    font-family: "Teko";
+    font-size: 7vh;
+    letter-spacing: -0.1vw;
+    color: #252525;
+    margin: 12vh 0 3vh;
+}
+
+.game-overview-6 div
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3vh 0;
+    box-sizing: border-box;
+}
+
+.game-overview-6 div div
+{
+    margin: 0 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-overview-6 a
+{
+    color: #252525;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-overview-6 img
+{
+    height: 30vh;
+    width: 25vw;
+}
+
+.game-overview-6 span
+{
+    font-family: 'TT Lakes Neue Regular';
+    font-size: 4vh;
+    padding: 3vh;
+    text-align: center;
+}
+
+.play-free
+{
+    background-image: url(Images/Footer/Play-Bg-2.jpg);
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.play-free-down
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 9vw;
+    margin: 7.5vh 0;
+}
+
+.play-free-down label
+{
+    font-family: "Teko";
+    font-size: 8vh;
+    color: white;
+    margin-bottom: 3vh;
+}
+
+.play-free-down>span
+{
+    font-family: 'TT Lakes Neue light';
+    font-size: 3.2vh;
+    color: whitesmoke;
+}
+
+.play-free-down a
+{
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 1.5vh 1.6vw;
+    margin-top: 3.5vh;
+    font-family: 'TT Lakes Neue light';
+    font-size: 3.1vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: lighter;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.play-free-condition
+{
+    color: whitesmoke;
+    font-size: 2.5vh;
+    box-sizing: border-box;
+    padding: 0 8.5vw;
+    font-family: 'TT Lakes Neue light';
+    text-align: center;
+    margin: 3vh 0 3.5vh 0;
+}
+
+.footer
+{
+    background-color: #252525;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links
+{
+    border-bottom: 0.5px solid gray;
+    height: 30%;
+    width: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links-nav
+{
+    font-family: 'TT Lakes Neue Regular';
+    font-size: 2.8vh;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links-nav a
+{
+    text-decoration: none;
+    color: #909090;
+}
+
+.footer-links-nav a:hover
+{
+    color: #DA292A;
+}
+
+.footer-links-contact
+{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-links-contact-label
+{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.footer-links-contact-label label
+{
+    color: white;
+    font-family: "Teko";
+    font-size: 3.2vh;
+}
+
+.footer-links-contact-social
+{
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    padding-top: 1.5vh;
+    display: flex;
+    text-align: end;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.footer-links-contact-social a
+{
+    margin-left: 1.8vw;
+}
+
+.socials
+{
+    height: 3.4vh;
+    width: 1.7vw;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+#yt
+{
+    height: 3.4vh;
+    width: 1.7vw;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+#yt:hover
+{
+    transform: scale(1.2);
+}
+
+.socials:hover
+{
+    transform: scale(1.2);
+}
+
+#socials
+{
+    height: 3.4vh;
+    width: 0.8vw;
+    transition-duration: 0.1s;
+}
+
+#socials:hover
+{
+    transform: scale(1.2);
+}
+
+.footer-img
+{
+    height: 70%;
+    box-sizing: border-box;
+    width: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-img-game
+{
+    display: flex;
+    align-items: center;
+}
+
+#apex-mobile
+{
+    height: 14vh;
+    width: 6vw;
+    padding: 0 1vw;
+}
+
+#apex
+{
+    height: 21vh;
+    width: 6.75vw;
+    padding-right: 1vw;
+
+}
+
+#respawn
+{
+    height: 8.5vh;
+    width: 20vw;
+    padding: 0 1vw;
+}
+
+.footer-img-esb
+{
+    display: flex;
+    align-items: flex-end;
+}
+
+#esb
+{
+    height: 22vh;
+    width: 17vw;
+    padding-left: 1vw;
+}
+
+.footer-2
+{
+    height: 30%;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    color: #585858;
+    font-family: 'TT Lakes Neue Regular';
+}
+
+.footer-2-ea-logo
+{
+    box-sizing: border-box;
+    padding-top: 2vh;
+    width: 9%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#ea-logo
+{
+    height: 8vh;
+    width: 3.8vw;
+}
+
+.footer-2-ea
+{
+    height: 100%;
+    width: 56%;
+    display: flex;
+    align-items: space-around;
+    flex-direction: column;
+}
+
+.footer-2-ea a
+{
+    text-decoration: none;
+    color: #585858;
+}
+
+.footer-2-ea-top
+{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2.6vh;
+}
+
+.footer-2-ea-bottom
+{
+    height: 40%;
+    font-size: 2.28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.footer-2-ea-bottom-top
+{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.footer-2-ea-bottom-bottom
+{
+    display: flex;
+    align-items: center;
+}
+
+.footer-2-certificate
+{
+    width: 21%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+#certificate
+{
+    height: 8vh;
+    width: 11vw;
+}

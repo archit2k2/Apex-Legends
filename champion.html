@@ -1,0 +1,426 @@
+<html>
+    <head>
+        <title>Apex Legends - Champion Edition</title>
+        <link rel="stylesheet" href="champion.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="Fevicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Fevicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Fevicon/favicon-16x16.png">
+        <link rel="manifest" href="Fevicon/site.webmanifest">
+        <link rel="mask-icon" href="Fevicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <script src="champion.js"></script>
+    </head>
+    <body>
+        <div class="popup">
+            <div class="popup-close-button">
+                <a onclick="closepopup()">
+                    <img src="Images/Season/delete.png">
+                </a>
+            </div>
+            <div class="popup-video">
+                <iframe id="popup-video" src="https://www.youtube.com/embed/qkLTsJXn-0M" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="window">
+            <div class="navbar">
+                <div class="nav-tab">
+                    <div class="nav-logo">
+                        <a href="index.html" target="_self">
+                            <img src="Images/Home/Logo.svg">
+                        </a>
+                    </div>
+                    <div class="nav-link">
+                        <div>
+                            <a class="nav-link-title">
+                                ABOUT<p class="dropdown-arrow">▼</p>
+                            </a>
+                            <div id="def" class="multi-dropdown-menu">
+                                <div id="multi-dropdown-menu-option-1">
+                                    <div class="multi-dropdown-menu-option-label">
+                                        <label>OVERVIEW</label>
+                                    </div>
+                                    <div class="multi-dropdown-menu-option-links">
+                                        <div>
+                                            <a href="Game Overview.html" target="_self">
+                                                About Apex Legends
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="Legend.html" target="_self">
+                                                Legends
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="Maps.html" target="_self">
+                                                Maps
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="PC Requirements.html" target="_self">
+                                                PC Requirements
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.ea.com/able/resources/apex-legends" target="_blank">
+                                                Accessibility
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="multi-dropdown-menu-option-3">
+                                    <div class="multi-dropdown-menu-option-label">
+                                        <label>
+                                            SHOP
+                                        </label>
+                                    </div>
+                                    <div class="multi-dropdown-menu-option-links">
+                                        <div>
+                                            <a href="champion.html" target="_self">
+                                                Champion Edition
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <a class="nav-link-title">
+                                MODES<p class="dropdown-arrow">▼</p>
+                            </a>
+                            <div id="def" class="dropdown-menu">
+                                <div class="dropdown-menu-1">
+                                    <a href="Arena.html" target="_self">
+                                        Arenas
+                                    </a>
+                                </div>
+                                <div class="dropdown-menu-2">
+                                    <a href="Battle Royale.html" target="_self">
+                                        Battle Royale
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="Season.html" target="_self">
+                            SEASON
+                        </a>
+                        <a href="Battle Pass.html" target="_self">
+                            BATTLE PASS
+                        </a>
+                        <a href="Media.html" target="_self">
+                            MEDIA
+                        </a>
+                        <div>
+                            <a class="nav-link-title">
+                                COMMUNITY<p class="dropdown-arrow">▼</p>
+                            </a>
+                            <div id="def" class="multi-dropdown-menu">
+                                <div id="multi-dropdown-menu-option-1">
+                                    <div class="multi-dropdown-menu-option-label">
+                                        <label>SOCIAL</label>
+                                    </div>
+                                    <div class="multi-dropdown-menu-option-links">
+                                        <div>
+                                            <a href="https://twitter.com/PlayApex" target="_blank">
+                                                Twitter
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.instagram.com/playapex/" target="_blank">
+                                                Instagram
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.facebook.com/playapex" target="_blank">
+                                                Facebook
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.youtube.com/playapex" target="_blank">
+                                                Youtube
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.twitch.tv/playapex" target="_blank">
+                                                Twitch
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="multi-dropdown-menu-option-2">
+                                    <div class="multi-dropdown-menu-option-label">
+                                        <label>
+                                            COMMUNITY
+                                        </label>
+                                    </div>
+                                    <div class="multi-dropdown-menu-option-links">
+                                        <div>
+                                            <a href="https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en" target="_self">
+                                                Forms
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="Community.html" target="_self">
+                                                Community Guidelines
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="multi-dropdown-menu-option-3">
+                                    <div class="multi-dropdown-menu-option-label">
+                                        <label>
+                                            MERCHANDISE
+                                        </label>
+                                    </div>
+                                    <div class="multi-dropdown-menu-option-links">
+                                        <div>
+                                            <a href="https://www.playapexshop.com/" target="_blank">
+                                                playapexshop.com
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="intro">
+                    <div class="intro-img">
+                        <div>
+                            <img src="Images/Champion-Edition/champion-logo.png">
+                            <a id="play" onclick="openpopup()">
+                                <span>Watch Trailer&nbsp;&nbsp;▷</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <img src="Images/Champion-Edition/champion-bundle.png">
+                    <div>
+                        <div class="info">
+                            <label>
+                                Apex Legends™ - Champion Edition
+                            </label>
+                            <span>
+                                Make your mark with the Champion Edition. It's packed full of 
+                                everything you need to establish yourself in the Apex Games. 
+                                With all characters up to Season 7 instantly unlocked, you'll 
+                                be able to pick the Legend that fits your style from the start. 
+                                The Champion Edition offers a great deal on valuable exclusive 
+                                cosmetics, including Legendary skins and a Legendary gun charm, 
+                                along with a thousand Apex Coins. You'll be fully equipped to 
+                                suit up however you please each time you drop in.
+                            </span>
+                            <p>
+                                The Champion Edition
+                            </p>
+                            <ul>
+                                <li>
+                                    9 character unlocks (all Legends up to Season 7):
+                                    <ul>
+                                        <li>
+                                            Caustic, Mirage, Octane, Wattson, Crypto, Revenant, Loba, Rampart, and the Season 7 Legend
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    7 Exclusive Legendary items:
+                                    <ul>
+                                        <li>“Risen Queen” Wraith skin</li>
+                                        <li>“Forged Knight” Revenant skin</li>
+                                        <li>“Hallowed Spirit” Crypto skin</li>
+                                        <li>“Curse of the Awaken” Triple Take skin</li>
+                                        <li>“Slayer's Lancer” Flatline skin</li>
+                                        <li>“Jaded Myth” Sentinel skin</li>
+                                        <li>"Emperor Nessy XIV" Gun Charm</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    1,000 Apex Coins
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="purchase">
+                                <span>
+                                    Apex Legends™ - Champion Edition
+                                </span>
+                                <div>
+                                    <div>
+                                        <label>
+                                            APEX LEGENDS™ - CHAMPION EDITION
+                                        </label>
+                                        <span id="p1">
+                                            Visit EA App for pricing
+                                        </span>
+                                        <label id="p2">
+                                            EA APP ON PC
+                                        </label>
+                                    </div>
+                                    <img src="Images/Champion-Edition/apex-packfront-champion-edition.jpg">
+                                </div>
+                                <a class="button" id="ea" style="background-color: rgb(255, 100, 43);" href="index.html" target="_blank" onmouseover="changedesc(this)">
+                                    Buy Now On EA App<i class="fa-sharp fa-solid fa-display"></i>
+                                </a>
+                                <a class="steam" id="steam" href="https://store.steampowered.com/app/1445990/Apex_Legends__Champion_Edition/" target="_blank" onmouseover="changedesc(this)">
+                                    Buy Now On Steam<i class="fa-brands fa-steam"></i>
+                                </a>
+                                <a class="button" id="ps" style="background-color: rgb(1, 61, 180);" href="https://store.playstation.com/en-in/product/EP0006-CUSA12552_00-CHAMPIONPACKBUND" target="_blank" onmouseover="changedesc(this)">
+                                    Buy Now On PS4<i class="fa-brands fa-playstation"></i>
+                                </a>
+                                <a class="button" id="xbox" style="background-color: rgb(1, 180, 39);" href="https://www.xbox.com/en-in/games/store/apex-legends-champion-edition/9p9m6l1p16w3?rtc=1" target="_blank" onmouseover="changedesc(this)">
+                                    Buy Now On Xbox<i class="fa-brands fa-xbox"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="play-free">
+                    <div class="play-free-down">
+                        <label>
+                            PLAY FOR FREE*
+                        </label>
+                        <span>
+                            On PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S, 
+                            Nintendo Switch, and PC via EA App and Steam.
+                        </span>
+                        <a href="Download.html" target="_self">
+                            <span>
+                                PLAY FREE NOW
+                            </span>
+                        </a>
+                    </div>
+                    <div class="play-free-condition">
+                        <span>
+                            *Applicable platform account and platform subscription (sold separately) 
+                            may be required. Persistent internet connection and EA account required. 
+                            Age restrictions apply. Includes in-game purchases.
+                        </span>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div  class="footer-links">
+                        <div class="footer-links-nav">
+                            <a href="index.html" target="_self">
+                                Home
+                            </a>
+                            <a href="Game Overview.html" target="_self">
+                                About
+                            </a>
+                            <a href="Legend.html" target="_self">
+                                Legends
+                            </a>
+                            <a href="PC Requirements.html" target="_self">
+                                PC Specs
+                            </a>
+                            <a href="Media.html" target="_self">
+                                Media
+                            </a>
+                            <a href="https://answers.ea.com/t5/Apex-Legends/ct-p/apex-legends-en" target="_self">
+                                Forums
+                            </a>
+                            <a href="Download.html" target="_self">
+                                Play Free Now*
+                            </a>
+                        </div>
+                        <div class="footer-links-contact">
+                            <div class="footer-links-contact-label">
+                                <label>
+                                    JOIN THE CONVERSATION
+                                </label>
+                            </div>
+                            <div class="footer-links-contact-social">
+                                <a href="https://twitter.com/PlayApex" target="_blank">
+                                    <img  class="socials" src="Images/Footer/twitter.png">
+                                </a>
+                                <a href="https://www.twitch.tv/playapex" target="_blank">
+                                    <img class="socials" src="Images/Footer/twitch.png">
+                                </a>
+                                <a href="https://www.instagram.com/playapex/" target="_blank">
+                                    <img class="socials" src="Images/Footer/insta.png">
+                                </a>
+                                <a href="https://www.facebook.com/playapex" target="_blank">
+                                    <img id="socials" src="Images/Footer/fb.png">
+                                </a>
+                                <a href="https://www.youtube.com/playapex" target="_blank">
+                                    <img id="yt" src="Images/Footer/yt.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-img">
+                        <div class="footer-img-game">
+                            <a href="./index.html" target="_self">
+                                <img id="apex" src="Images/Footer/Apex-Legend.png">
+                            </a>
+                            <a href="https://www.ea.com/games/apex-legends/apex-legends-mobile" target="_self">
+                                <img id="apex-mobile" src="Images/Footer/Apex-Legend-Mobile.png">
+                            </a>
+                            <a href="https://www.respawn.com/" target="_self">
+                                <img id="respawn" src="Images/Footer/Respawn-Entertainment.png">
+                            </a>
+                        </div>
+                        <div class="footer-img-esb">
+                            <a href="https://www.esrb.org/" target="_self">
+                                <img id="esb" src="Images/Footer/ESB.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-2">
+                    <div class="footer-2-ea-logo">
+                        <a href="https://www.ea.com/" target="_self">
+                            <img id="Ea-logo" src="Images/Footer/EA-Logo.png">
+                        </a>
+                    </div>
+                    <div class="footer-2-ea">
+                        <div class="footer-2-ea-top">
+                            <a href="https://www.ea.com/games" target="_self">
+                                BROWSE GAMES
+                            </a>
+                            <a href="https://www.ea.com/about" target="_self">
+                                ABOUT
+                            </a>
+                            <a href="https://help.ea.com/in/" target="_self">
+                                SUPPORT
+                            </a>
+                            <a href="https://www.ea.com/ea-app" target="_self">
+                                SHOP ON EA APP
+                            </a>
+                            <a href="https://www.ea.com/able" target="_self">
+                                ACCESSIBILITY
+                            </a>
+                        </div>
+                        <div class="footer-2-ea-bottom">
+                            <div class="footer-2-ea-bottom-top">
+                                <a href="https://www.ea.com/legal" target="_self">
+                                    Legal & Privary
+                                </a>
+                                <a href="https://www.ea.com/legal/user-agreement" target="_self">
+                                    User Agreement
+                                </a>
+                                <a href="https://www.ea.com/legal/privacy-and-cookie-policy" target="_self">
+                                    Privary & Cookie Policy(Your Privary Rights)
+                                </a>
+                            </div>
+                            <div class="footer-2-ea-bottom-bottom">
+                                <p>
+                                    © 2022 Electronic Arts Inc.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-2-certificate">
+                        <a href="https://privacy.truste.com/privacy-seal/validation?rid=f1a11c5d-0232-4077-8498-2e69a38c1335" target="_blank">
+                            <img id="certificate" src="Images/Footer/Trust-Privacy-Certificate.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
